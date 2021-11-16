@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    background-color: rgb(71, 53, 71);
+    position: static;
+}
+
+.profile {
+    width: 25px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(218, 203, 203);
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(236, 224, 209);
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style: none;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(214, 202, 202);
+    margin: 5px;
+    align-items: center;
+}
+
+.back {
+    width: 100%;
+    height: 750px;
+    margin-top: 0px;
+    background: url(../pics/2.jpg) no-repeat scroll;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    padding: 40px 30px 20px 30px;
+    color: whitesmoke;
+    font-size: 55px;
+}
+
+.us {
+    display: inline-flex;
+}
+
+.port {
+    margin-left: 31px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    background: url(../pics/port-harcourt.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.more {
+    margin-left: 90px;
+    border-radius: 10px;
+    height: 250px;
+    width: 200px;
+    background: url(../pics/mor.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.land {
+    color: whitesmoke;
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    ul {
+        width: 60%;
+    }
+    .port {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    ul {
+        position: absolute;
+        right: 0px;
+        height: 250px;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 42%;
+        letter-spacing: 1px;
+        background-color: rgb(94, 47, 3);
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .menu {
+        display: block;
+    }
+    .port {
+        width: 100%;
+    }
+}
+
+nav-active {
+    transform: translateX(0%);
+}
