@@ -1,143 +1,238 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: euclidCircularB, Arial, sans-serif;
+    overflow-x: hidden;
 }
+
+
+/*------------------Navbar---------------*/
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    min-height: 70px;
-    align-items: center;
-    font-family: 'poppins', sans-serif;
-    font-weight: 700;
-    background-color: rgb(71, 53, 71);
-    position: static;
-}
-
-.profile {
-    width: 25px;
-}
-
-.logo {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: rgb(218, 203, 203);
-    cursor: pointer;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 35%;
-}
-
-ul a {
-    text-decoration: none;
-    color: rgb(236, 224, 209);
-    text-transform: uppercase;
-}
-
-ul li {
-    list-style: none;
-}
-
-.menu {
-    cursor: pointer;
-    display: none;
-}
-
-.menu div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(214, 202, 202);
-    margin: 5px;
-    align-items: center;
-}
-
-.back {
+    display: inline-flex;
+    justify-content: space-between;
     width: 100%;
-    height: 750px;
-    margin-top: 0px;
-    background: url(../pics/2.jpg) no-repeat scroll;
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(238, 228, 215);
+    align-items: center;
+    height: 70px;
 }
 
-body {
-    background-color: rgb(0, 0, 0);
+h2 {
+    color: rgb(255, 102, 0);
+    margin-left: 30px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+}
+
+.list ul {
+    display: flex;
+    margin-right: 125px;
+}
+
+.list ul li {
+    list-style: none;
+    padding: 0 8px;
+}
+
+.list ul li a {
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.list ul li a:hover {
+    color: rgb(255, 102, 0);
+    letter-spacing: 2px;
+}
+
+
+/*------------------Get Premium--------------*/
+
+.wed {
+    display: flex;
 }
 
 h1 {
-    padding: 40px 30px 20px 30px;
-    color: whitesmoke;
-    font-size: 55px;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    padding-left: 30px;
+    word-spacing: 5px;
+    line-height: 90px;
+    padding-top: 70px;
+    font-weight: 780;
+    height: 620px;
+    background: linear-gradient(145deg, rgb(218, 87, 0), rgba(255, 102, 0, 0.644));
+    background: linear-gradient(500deg, rgb(218, 87, 0), rgba(255, 102, 0, 0.644));
+    width: 610px;
 }
 
-.us {
-    display: inline-flex;
-}
-
-.port {
-    margin-left: 31px;
-    border-radius: 10px;
-    height: 250px;
-    width: 250px;
-    background: url(../pics/port-harcourt.jpeg) no-repeat;
+.pic img {
+    width: 930px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
-.more {
-    margin-left: 90px;
-    border-radius: 10px;
-    height: 250px;
+.download {
+    margin: 20px 0px -45px 17px;
+    font-size: 22px;
+    word-spacing: 0px;
+    font-weight: 100;
+}
+
+.app {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 100;
+    word-spacing: 0px;
+    padding: 15px;
+    margin: 0px 170px 100px 170px;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 200px;
+    background-color: rgb(15, 13, 46);
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+.app:hover {
+    color: rgb(236, 127, 54);
+    letter-spacing: 3px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+/*------------------Try to deliver--------------*/
+
+.try {
+    margin-top: -4px;
+    height: 200px;
+    background: linear-gradient(to right, rgb(26, 26, 173), rgba(173, 216, 230, 0.548));
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+h3 {
+    margin: 30px 0px 5px 300px;
+    font-size: 35px;
+    word-spacing: 0px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 65px;
+}
+
+.earn {
+    color: rgb(238, 235, 241);
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.tap {
+    text-decoration: none;
+    display: block;
+    border-radius: 100px;
+    font-weight: 400;
+    padding: 20px;
+    background-color: whitesmoke;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 70px 350px 50px 30px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+    -moz-transition: 0.75s;
+    -ms-transition: 0.75s;
+    -o-transition: 0.75s;
+}
+
+.tap:hover {
+    letter-spacing: 2px;
+    color: rgb(236, 127, 54);
+}
+
+
+/*------------------Steps--------------*/
+
+.steps {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    overflow-y: hidden;
+}
+
+.pick {
+    background: url(../pics/locale.png) no-repeat;
+    background-size: contain;
     width: 200px;
-    background: url(../pics/mor.jpg) no-repeat;
+    height: 400px;
     background-position: center;
-    background-size: cover;
+    margin: 0px 0px 0px 0px;
 }
 
-.land {
-    color: whitesmoke;
+.locate {
+    margin: 320px 0px 0px 30px;
 }
 
-@media screen and (max-width:1024px) {
-    body {
-        overflow-x: hidden;
-    }
-    ul {
-        width: 60%;
-    }
-    .port {
-        width: 100%;
-    }
+.request {
+    background: url(../pics/order.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 400px;
+    margin: 190px 0px 0px 0px;
 }
 
-@media screen and (max-width:800px) {
-    ul {
-        position: absolute;
-        right: 0px;
-        height: 250px;
-        top: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 42%;
-        letter-spacing: 1px;
-        background-color: rgb(94, 47, 3);
-        transform: translateX(100%);
-        transition: 0.5s ease-in;
-    }
-    .menu {
-        display: block;
-    }
-    .port {
-        width: 100%;
-    }
+.req {
+    margin: 220px 0px 0px 30px;
 }
 
-nav-active {
-    transform: translateX(0%);
+.meet {
+    background: url(../pics/meeet.png) no-repeat;
+    background-size: contain;
+    margin: 250px 0px 0px 0px;
+    width: 300px;
+    height: 400px;
+}
+
+.mit {
+    margin: 320px 0px 0px 30px;
+}
+
+.enjoy {
+    background: url(../pics/enjo.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 400px;
+    background-position: center;
+}
+
+.enjo {
+    margin: 320px 0px 0px 30px;
 }

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------------------Bg img------------*/
+
+body {
+    background: url(../pics/4.jpg));
+}
+
+
+/*-----nav Bar series---*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2015;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+}
+
+.logi {
+    width: 55px;
+    position: absolute;
+    margin-left: -1275px;
+}
+
+.profile {
+    width: 25px;
+    color: whitesmoke;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(218, 203, 203);
+    cursor: pointer;
+    margin-left: -160px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    margin-right: -280px;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(236, 224, 209);
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style: none;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(214, 202, 202);
+    margin: 5px;
+    align-items: center;
+}
