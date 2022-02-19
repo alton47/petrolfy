@@ -1,78 +1,55 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: euclidCircularB, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 
-/*-------------------Bg img------------*/
-
-body {
-    background: url(../pics/4.jpg));
-}
-
-
-/*-----nav Bar series---*/
+/*------------------Navbar---------------*/
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    min-height: 70px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(238, 228, 215);
     align-items: center;
-    font-family: 'poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2015;
-    background-color: rgb(0, 0, 0);
-    position: sticky;
+    height: 70px;
+    position: fixed;
     top: 0;
 }
 
-.logi {
-    width: 55px;
-    position: absolute;
-    margin-left: -1275px;
-}
-
-.profile {
-    width: 25px;
-    color: whitesmoke;
-}
-
-.logo {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: rgb(218, 203, 203);
+h2 {
+    color: rgb(255, 102, 0);
+    margin-left: 30px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
     cursor: pointer;
-    margin-left: -160px;
 }
 
-ul {
+.list ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 35%;
-    margin-right: -280px;
+    margin-right: 125px;
 }
 
-ul a {
-    text-decoration: none;
-    color: rgb(236, 224, 209);
-    text-transform: uppercase;
-}
-
-ul li {
+.list ul li {
     list-style: none;
+    padding: 0 8px;
 }
 
-.menu {
-    cursor: pointer;
-    display: none;
+.list ul li a {
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
-.menu div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(214, 202, 202);
-    margin: 5px;
-    align-items: center;
+.list ul li a:hover {
+    color: rgb(255, 102, 0);
+    letter-spacing: 2px;
 }
